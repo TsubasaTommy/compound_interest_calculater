@@ -4,6 +4,10 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
+  server:{
+    port:8572
+  },
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -47,8 +51,8 @@ export default {
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
+/*    theme: {
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -60,7 +64,7 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    }*/
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
