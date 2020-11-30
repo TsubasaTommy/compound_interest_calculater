@@ -3,7 +3,7 @@
     <v-app-bar app>
       <template>
         <v-tabs v-model="nav.tab">
-          <v-tab v-for="item in nav.items" :key="item" :to="item" nuxt>
+          <v-tab v-for="item in nav.items" :key="item">
             {{item}}
           </v-tab>
         </v-tabs>
@@ -11,11 +11,10 @@
     </v-app-bar>
     
     <v-main>
-      <nuxt />
+      <Calc :tab="nav.tab"/>
     </v-main>
 
     <v-footer>
-      
     </v-footer>
   </v-app>
 </template>
