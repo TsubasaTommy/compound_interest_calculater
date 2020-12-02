@@ -4,7 +4,7 @@ function loop(capital, ratio, result) {
   ratio = Number(ratio)
   result = Number(result)
 
-  if(0 < ratio){
+  if(0 < ratio && 0 < capital){
 
     const list = [];
     let sum = 0;
