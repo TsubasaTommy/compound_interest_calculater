@@ -1,20 +1,7 @@
-# compound_interest_calculater
+# compound_interest_calculater(複利計算器)
 
-## Build Setup
+## Usage(使い方)
+you can input same needs value then get answer for Tab
+同じニーズ値を入力して、タブの回答を得ることができます
 
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[Compound_interest_calculater](https://amazing-payne-3899a9.netlify.app/ "you can try it! 実際にご使用いただけます")
