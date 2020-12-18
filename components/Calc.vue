@@ -66,7 +66,7 @@ export default {
     ratio(){return this.ratio_d / 100},
 
     math_capital(){ return this.capital = Math.round(this.result / (1 + this.ratio) ** this.times)},
-    math_ratio(){ return this.ratio_d = Math.round(((this.result / this.capital)**(1 / this.times) - 1) * 100)},
+    math_ratio(){ return this.ratio_d = Math.round(((this.result / this.capital)**(1 / this.times) - 1) * 10000)/100},
     math_times(){ return this.times = Math.round(Math.log(this.result / this.capital) / Math.log(1+this.ratio))},
     math_result(){return this.result = Math.round(this.capital * ( 1 + this.ratio ) ** this.times)},  
 
