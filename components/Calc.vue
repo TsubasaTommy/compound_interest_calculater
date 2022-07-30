@@ -2,52 +2,26 @@
   <v-container>
     <v-row justify="center">
       <v-col cols="12" sm="3">
-        <v-text-field
-          label="capital (元金)"
-          v-model="capital"
-          prefix="$"
-          type="Number"
-          v-if="!(tab === 0)"
-        ></v-text-field>
-        <v-text-field
-          label="ratio (利率)"
-          v-model="ratio_d"
-          prefix="%"
-          type="Number"
-          v-if="!(tab === 1)"
-        ></v-text-field>
-        <v-text-field
-          label="times (回数)"
-          v-model="times"
-          prefix="x"
-          type="Number"
-          v-if="!(tab === 2)"
-        ></v-text-field>
-        <v-text-field
-          label="result (結果)"
-          v-model="result"
-          prefix="$"
-          type="Number"
-          v-if="!(tab === 3)"
-        ></v-text-field>
+        <v-text-field label="capital (元金)" v-model="capital" prefix="$" type="Number" v-if="!(tab === 0)">
+        </v-text-field>
+        <v-text-field label="ratio (利率)" v-model="ratio_d" prefix="%" type="Number" v-if="!(tab === 1)"></v-text-field>
+        <v-text-field label="times (回数)" v-model="times" prefix="x" type="Number" v-if="!(tab === 2)"></v-text-field>
+        <v-text-field label="result (結果)" v-model="result" prefix="$" type="Number" v-if="!(tab === 3)"></v-text-field>
       </v-col>
     </v-row>
     <v-row justify="center">
       <p class="display-4">
         {{get_prefix}}
-        {{Math.round(get_answer * 100)/100}}
+        {{(Math.round(get_answer * 100)/100).toLocaleString()}}
       </p>
     </v-row>
     <v-divider></v-divider>
-    
-    <list-up
-      :x="{
+
+    <list-up :x="{
         capital,
         ratio:ratio_d / 100,
         result
-      }"
-      v-if="tab === 2"
-    />
+      }" v-if="tab === 2" />
 
   </v-container>
 </template>
