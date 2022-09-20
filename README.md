@@ -5,3 +5,7 @@ you can input same needs value then get answer for Tab
 now you can try it!  
 ↓  
 [Compound_interest_calculater](https://amazing-payne-3899a9.netlify.app/ "you can try it! 実際にご使用いただけます")
+
+## 説明
+入力可能な値はウェブストレージにストアされます。
+タブの切り替えもシームレスに行うことができ、パフォーマンスも良いです。
